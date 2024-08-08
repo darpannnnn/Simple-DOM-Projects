@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projects| Guess The Number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/0-landingPage/index.html" id="homeBtn">
+        <span class="home">Home</span>
+      </a>
+      <button id="menuBtn">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <div class="dropdownMenu">
+        <a href="/1-colorChanger/index.html">
+          <span>Project 1</span>
+        </a>
+        <a href="/2-BMICalculator/index.html">
+          <span>Project 2</span>
+        </a>
+        <a href="/3-DigitalClock/index.html">
+          <span>Project 3</span>
+        </a>
+        <a href="/4-GuessTheNumber/index.html">
+          <span>Project 4</span>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="gameBox">
+            <div class="wrapper">
+                <button id="playAgain">Play Again</button>
+                <p>Between 1 and 100</p>
+            </div>
+            <h2>Guess My Number Game</h2>
+            <p class="hideNum">
+                <i class="fa-solid fa-question" style="color: #fcfcfc;"></i>
+            </p>
+            <p class="msg">Start Guesing........</p>
+    
+            <div class="numberData">
+                <form>
+                    <input type="number" placeholder="Enter Your Number" id="userInput">
+                    <button id="check">Check Now!</button>
+                </form>
+                
+                <div class="content">
+                    <p>Score: <span class="score">20</span></p>
+                    <p>High Score: <span class="highScore">0</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

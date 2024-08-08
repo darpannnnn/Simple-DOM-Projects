@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects| Color Changer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/0-landingPage/index.html"  id="homeBtn">
+        <span class="home">Home</span>
+      </a>
+      <button id="menuBtn">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <div class="dropdownMenu">
+        <a href="/1-colorChanger/index.html">
+          <span>Project 1</span>
+        </a>
+        <a href="/2-BMICalculator/index.html">
+          <span>Project 2</span>
+        </a>
+        <a href="/3-DigitalClock/index.html">
+          <span>Project 3</span>
+        </a>
+        <a href="/4-GuessTheNumber/index.html">
+          <span>Project 4</span>
+        </a>
+        
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Color Scheme Switcher</h1>
+      <div id="canvas">
+          <span class="button" id="grey"></span>
+          <span class="button" id="white"></span>
+          <span class="button" id="lightskyblue"></span>
+          <span class="button" id="yellow"></span>
+      </div>
+      <h2>
+        Try clicking on one of the colors above
+        <span>to change the background color of this page</span>
+      </h2>
+      <button id="resetBtn">
+        <i class="fa-solid fa-arrow-rotate-left" id="rotate"></i>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects| BMI Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/0-landingPage/index.html"  id="homeBtn">
+        <span class="home">Home</span>
+      </a>
+      <button id="menuBtn">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <div class="dropdownMenu">
+        <a href="/1-colorChanger/index.html">
+          <span>Project 1</span>
+        </a>
+        <a href="/2-BMICalculator/index.html">
+          <span>Project 2</span>
+        </a>
+        <a href="/3-DigitalClock/index.html">
+          <span>Project 3</span>
+        </a>
+        <a href="/4-GuessTheNumber/index.html">
+          <span>Project 4</span>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+
+      <form>
+        <div class="info">
+          <div>
+            <label for="height">Height(cm)</label>
+            <input type="text" id="height">
+          </div>
+          <div>
+            <label for="weight">Weight(kg)</label>
+            <input type="text" id="weight">
+          </div>
+        </div>
+  
+        <div id="btns">
+          <button id="resetBtn">Reset</button>
+          <button id="calculateBtn">Calculate BMI</button>
+        </div>
+  
+        <div class="results">
+          <h2>Your BMI is</h2>
+          <h3 id="result"></h3>
+          <h3 id="resultTxt"></h3>
+        </div>
+      </form>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
