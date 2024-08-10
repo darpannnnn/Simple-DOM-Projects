@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects| Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/0-landingPage/index.html"  id="homeBtn">
+        <span class="home">Home</span>
+      </a>
+      <button id="menuBtn">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <div class="dropdownMenu">
+        <a href="/1-colorChanger/index.html">
+          <span>Project 1</span>
+        </a>
+        <a href="/2-BMICalculator/index.html">
+          <span>Project 2</span>
+        </a>
+        <a href="/3-DigitalClock/index.html">
+          <span>Project 3</span>
+        </a>
+        <a href="/4-GuessTheNumber/index.html">
+          <span>Project 4</span>
+        </a>
+        <a href="/5-CounterProgram/index.html">
+          <span>Project 5</span>
+        </a>
+        <a href="/6-WeatherApp/index.html">
+          <span>Project 6</span>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="wrapper">
+        <div class="box box1">
+          <p>
+            1.Enter A NUMBER TO START AT:
+            <input type="number" class="startingValue">
+          </p>
+          <button id="submitStartValue">Select</button>
+        </div>
+
+        <div class="box box2">
+          <p>
+            2.ENTER A NUMBER TO COUNT BY:
+            <input type="number" class="countByValue">
+          </p>
+          <button id="submitCount">Select</button>
+        </div>
+
+        <div class="box box3">
+          <span id="value">0</span>
+          <div class="btns">
+            <button id="decreaseBtn">
+              Decrease
+            </button>
+            <button id="resetValueBtn">
+              Reset
+            </button>
+            <button id="increaseBtn">
+              Increase
+            </button>
+          </div>
+          <button id="resetPageBtn">
+            Reset Page
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

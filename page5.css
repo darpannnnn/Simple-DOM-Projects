@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+}
+
+:root{
+  --bgColor : #8c52ff;
+  --color: #fff;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px grey;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #023E8A;
+    border: none;
+}
+
+.dropdownMenu{
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    width: 150px;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 999;
+}
+
+.dropdownMenu a{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdownMenu>a:hover{
+    background-color: grey;
+}
+
+.display{
+    display: flex;
+}
+
+
+.links {
+  font-size: 18px;
+}
+
+nav #homeBtn {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 black;
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav #menuBtn {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px black;  
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+#homeBtn:active,
+#menuBtn:active {
+  transform: translate(2, 2);
+  box-shadow: 0px 0px black;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid; */
+}
+
+.container .wrapper{
+  border: 1px solid;
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  box-sizing: border-box;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border-radius: 12px;
+}
+
+.wrapper .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.box button {
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  color: var(--color);
+  background-color: var(--bgColor);
+  border: none;
+}
+
+.box button:hover{
+  background-color: var(--color);
+  border: 1px solid var(--bgColor);
+  color: var(--bgColor);
+}
+
+.box3 .btns{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box3 span{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.box p>input{
+  width: 80px;
+  height: 20px;
+  border-radius: 8px;
+  border:2px solid var(--bgColor);
+  outline: #8c52ff;
+}
+
+#submitStartValue:disabled{
+  background-color: limegreen;
+  color: black;
+  border: 3px solid limegreen;
+}
+
+#submitCount:disabled{
+  background-color: limegreen;
+  color: black;
+  border: 3px solid limegreen;
+}
+
+#resetPageBtn{
+  width: 300px;
+}
+
+@media screen and (min-width:450px) and (max-width:550px) {
+  .container .wrapper{
+    width: 400px;
+    /* height: 600px; */
+  }
+
+  .box3 .btns{ 
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width:320px) and (max-width:450px) {
+  .container .wrapper{
+    width: 80%;
+  }
+
+  .box p{
+    text-align: center;
+    line-height: 2;
+  }
+
+  .box3 .btns{ 
+    flex-wrap: wrap;
+  }
+
+  #resetPageBtn {
+    width: 90%;
+  }
+}
