@@ -176,12 +176,14 @@ nav #menuBtn {
   background-color: limegreen;
   color: black;
   border: 3px solid limegreen;
+  cursor: not-allowed;
 }
 
 #submitCount:disabled{
   background-color: limegreen;
   color: black;
   border: 3px solid limegreen;
+  cursor: not-allowed;
 }
 
 #resetPageBtn{
