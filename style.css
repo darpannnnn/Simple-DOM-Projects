@@ -102,6 +102,7 @@ nav #menuBtn {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-top: 50px;
     /* border: 1px solid; */
 }
 
