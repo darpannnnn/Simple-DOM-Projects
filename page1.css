@@ -23,7 +23,7 @@ nav {
     right: 35px;
     top: 65px;
     width: 150px;
-    height: 150px;
+    height: fit-content;
     border-radius: 10px;
     box-shadow: 1px 1px 5px grey;
     background-color: white;
