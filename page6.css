@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+  }
+  
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px grey;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #023e8a;
+    border: none;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    width: 150px;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 999;
+  }
+  
+  .dropdownMenu a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdownMenu > a:hover {
+    background-color: grey;
+  }
+  
+  .display {
+    display: flex;
+  }
+  
+  .links {
+    font-size: 18px;
+  }
+  
+  nav #homeBtn {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 black;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav #menuBtn {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  #homeBtn:active,
+  #menuBtn:active {
+    transform: translate(2, 2);
+    box-shadow: 0px 0px black;
+  }
+  
+  .container {
+    margin: 50px 0px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid; */
+  }
+
+  .container1, .container2 {
+    width: 288px;
+    height: 60vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #475569;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+
+  .box {
+    cursor: grab;
+    color: white;
+    background-color: black;
+    width: 70%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
